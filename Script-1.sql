@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS Artist_album (
 CREATE TABLE IF NOT EXISTS Track (
 	track_id SERIAL PRIMARY KEY,
 	track_name VARCHAR(40) NOT NULL,
-	duration INT,
+	duration INT NOT NULL,
 	album_id int REFERENCES Album(album_id)
 );
 
