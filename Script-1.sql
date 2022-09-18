@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS Artist (
 );
 
 CREATE TABLE IF NOT EXISTS Artist_genre (
-	artist INT NOT NULL REFERENCES Artists(artist_id),
+	artist INT NOT NULL REFERENCES Artist(artist_id),
 	genre INT NOT NULL REFERENCES Genres(genre_id)
 );
 
