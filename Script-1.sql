@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS Track (
 CREATE TABLE IF NOT EXISTS Collection_track_list (
 	collection_track_list_id SERIAL PRIMARY KEY,
 	collection_name VARCHAR(40) NOT NULL,
-	year_of_issue VARCHAR(40) NOT NULL
+	year_of_issue INT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Track_list (
